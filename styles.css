@@ -1,9 +1,3 @@
-/** {*/
-/*  margin: 0;*/
-/*  padding: 0;*/
-/*  box-sizing: border-box;*/
-/*}*/
-
 .navbar {
     font-size:2em;
 }
@@ -59,13 +53,8 @@ a:link {
 .player, .team, .game {
   color: black;
   max-height:65%;
-  /*width:50%;*/
   overflow:auto;
-  /*border:8px solid yellowgreen;*/
-  /*padding:2%;*/
 }
-
-
 
 .home {
   background-color: #DCE7F3;
@@ -100,31 +89,72 @@ h4 {
   text-align: center;
 }
 
+.masonry {
+  margin: 1.5em auto;
+  column-gap: 1.5em;
+  margin-top: auto;
+  margin-bottom: auto;
+  flex-basis: 100%;
+}
+
+.item {
+  background: #fff;
+  padding: 1em;
+  margin: 0 0 1.5em;
+  font-size: 24px;
+  text-align: center;
+}
 
 
-/* Masonry on large screens */
+/* large screens */
 @media only screen and (min-width: 1024px) {
   .masonry {
     column-count: 4;
   }
+  .first-txt {
+    /*max-width: 50%;*/
+    left: 30%;
+    right: 30%;
+    font-size: .75em;
+  }
+  
 }
 
-/* Masonry on medium-sized screens */
+/* medium-sized screens */
 @media only screen and (max-width: 1023px) and (min-width: 768px) {
   .masonry {
     column-count: 3;
   }
-  .top-right {
-    font-size: 1em;
+  .navbar {
+    font-size:1em;
+  }
+  .first-txt {
+    max-width: 70%;
+    left: 10%;
+    right: 10%;
+    font-size: .75em;
+  }
+  h1, h2, p, h4{
+    padding: 15px;
+    font-size: .75em;
   }
 }
 
-/* Masonry on small screens */
+/* small screens */
 @media only screen and (max-width: 767px) and (min-width: 540px) {
   .masonry {
     column-count: 2;
   }
-  .top-right {
-    font-size: 1em;
+  .first-txt {
+    max-width: 70%;
+    left: 10%;
+    font-size: .65em;
+  }
+  .home {
+    font-size: 1.5em;
+  }
+  
+  .info {
+    font-size: 1.5em;
   }
 }
