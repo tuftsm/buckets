@@ -145,6 +145,31 @@ h4 {
   .masonry {
     column-count: 2;
   }
+  .navbar {
+    font-size:1em;
+  }
+  .first-txt {
+    max-width: 70%;
+    left: 10%;
+    font-size: .65em;
+  }
+  .home {
+    font-size: 1.5em;
+  }
+  
+  .info {
+    font-size: 1.5em;
+  }
+}
+
+/* ridiculously small screens */
+@media only screen and (max-width: 540px) {
+  .masonry {
+    column-count: 2;
+  }
+  .navbar {
+    font-size:1em;
+  }
   .first-txt {
     max-width: 70%;
     left: 10%;
